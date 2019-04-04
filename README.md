@@ -27,3 +27,16 @@ html5 class
   - placeholder 속성을 작성 활용 방법을 배우고 실행하여 보았다.
   - fieldset 을 작성 활용 방법을 배우고 실해하여 보았다.
   
+- wk05 upload
+  - wk05_src 를 이용하여 CSS3 를 이용한 style 사용법 을 익히고 실행
+  - slector 를 이용하여 각 태그를 꾸미는 방법을 익힘.
+  - slector 를 사용할때 class 와 id 를 사용하여 직접 태그를 지정하여 사용하는 방법을 익힘.
+  - url 과 import 를 이용하여 CSS 파일을 불러와 style 을 사용하였다.
+  - 가상 클래스 셀렉터의 종류를 배우고 어떠한 상황에 사용하는지 알아보았다.
+  - text 를 꾸미는 방법으로 text-decoration , text-align 을 비우고 실행
+  - CSS3 의 표준 단위에 대해 배움
+  - text 의 font 를 제어하는 법을 익힘.
+  - box model 을 사용하는 법을 익힘.
+  - border-image 를 사용하여 box model 의 테두리 이미지를 설정하는 방법을 익힘.
+  - 위에서 익힌것을 이용하여 배경을 만드는 방법을 익힘.
+  - text-shadow , box-shadow , cursor 를 이용하는 방법을 익힘.
