@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm20 : CSS3 advanced</title>
+    <style>
+        #d {
+            width: 200px;
+            height: 300px;
+            border-image: url("cc.jpg") 30 repeat;
+        }
+
+        p#scale:hover {
+            transform: scale(2, 1);
+        }
+
+        #d1 {
+            width: 15px;
+            height: 20px;
+            border-image: url("cc.jpg") 30 repeat;
+            background: white;
+        }
+
+        #d2 {
+            width: 15px;
+            height: 20px;
+            border-image: url("cc.jpg") 30 repeat;
+            background: orange;
+        }
+
+        #d3 {
+            width: 15px;
+            height: 20px;
+            border-image: url("cc.jpg") 30 repeat;
+            background: yellow;
+        }
+
+        #d4 {
+            width: 15px;
+            height: 20px;
+            border-image: url("cc.jpg") 30 repeat;
+            background: pink;
+        }
+
+        #d5 {
+            width: 15px;
+            height: 20px;
+            border-image: url("cc.jpg") 30 repeat;
+            background: violet;
+        }
+
+        p {
+            border: 5px solid;
+        }
+
+        div {
+            display: inline-block;
+            position: absolute;
+            /* 절대 배치 */
+            border: 15px solid;
+            width: 200px;
+            height: 300px;
+        }
+
+        div>p {
+            display: inline-block;
+            /* div의 자식 p */
+            position: absolute;
+            /* 절대 배치 */
+            height: 20px;
+            width: 15px;
+        }
+
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>Merry Christmas!</h3>
+    <hr>
+    <p>
+        예수님이 탄생하셨습니다.
+    </p>
+    <div id="d">
+        <img src="christmastree.png" width="200px" height="200px" alt="크리스마스 트리">
+        <p id="d1" style="left: 50px;top: 30px">
+            M
+        </p>
+        <p id="d2" style="left: 110px;top: 15px">
+            E
+        </p>
+        <p id="d3" style="left: 100px;top: 80px">
+            R
+        </p>
+        <p id="d4" style="left:150px; top:110px">
+            R
+        </p>
+        <p id="d5" style="left:30px; top:130px">
+            Y
+        </p>
+        <p id="scale" style="left:60px; top:250px;          width: 130px;
+            height: 25px">
+            hm20 - 김영록
+        </p>
+        <audio style="width:200px; height: 20;" src="bb.mp3" controls autoplay loop>
+        </audio>
+    </div>
+
+</body>
+
+</html>
