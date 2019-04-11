@@ -40,3 +40,12 @@ html5 class
   - border-image 를 사용하여 box model 의 테두리 이미지를 설정하는 방법을 익힘.
   - 위에서 익힌것을 이용하여 배경을 만드는 방법을 익힘.
   - text-shadow , box-shadow , cursor 를 이용하는 방법을 익힘.
+  
+  -wk06 upload
+    - display 를 이용하여 박스의 위치 크기를 수정하는 방법을 배웠다.<block , inline>
+    - float, fixed, z-index, visibility, overflow를 이용하는 방법을 배움
+    - CSS3 로 리스트를 꾸미는 방법을 배움.
+    - CSS3 로 표를 꾸미는 방법을 배웠다.
+    - Form 을 꾸미는 방법을 연습 했다.
+    - 애니매이션 효과를 이용하는 법을 배웠다.
+    - rpt02<크리스마스 카드 제작> 연습문제를 하였다.
