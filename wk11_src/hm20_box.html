@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7장 연습문제 - 9</title>
+    <script>
+      function fill(){return this.amount += 2;}
+      function consume(){return this.amount -= 2;}
+
+      var box = new Object();
+      box.color = "red";
+      box.size = "10";
+      box.amount = 0;
+      box.fill = fill;
+      box.consume = consume;
+    </script>
+  </head>
+  <body>
+    <h3>hm20 box 객체 new object 사용 출력</object></h3>
+    <hr />
+    <script>
+      document.body.style.backgroundColor = "lightskyblue";
+      var user = prompt(" 당신이 생각하는 Amount 값은?", 0);
+      document.write(
+        "<strong>Box : </strong> " +
+          box.color +
+          " , " +
+          box.size +
+          " , " +
+          box.amount +
+          "<hr>"
+      );
+      document.write("<strong>Box-Color : </strong> " + box.color + "<br>");
+      document.write("<strong>Box-Size : </strong> " + box.size + "<br>");
+      document.write("<strong>Box-Amount : </strong> " + box.amount + "<hr>");
+      document.write(
+        "<strong>document.write() 로 amount 프로퍼티값 호출</strong> " +
+          box.fill() +
+          "<br>"
+      );
+      document.write(
+        "<strong>document.write() 로 amount 프로퍼티값 호출</strong> " +
+          box.consume() +
+          "<hr>"
+      );
+
+      document.write("깜짝퀴즈 결과!!");
+      if (box.amount == user) {
+        document.write("정답!!!<br>");
+        document.write("답은 " + box.amount + " 입니다.");
+      } else {
+        document.write("아닙니다!!!<br>");
+        document.write("답은 " + box.amount + " 입니다.");
+      }
+    </script>
+  </body>
+</html>

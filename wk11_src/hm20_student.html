@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7장 연습문제 - 9</title>
+    <script>
+      //리터럴 표기법으로 사용자 객체 만들기
+      var student = {
+        // 프로퍼티 생성 및 초기화
+        id: "20182562", // 학번
+        name: "Kim young rok", // 이름
+        Age: "21", // 나이
+        number: "010 - 8551 - 7165", // 전화번호
+        brith: "2000 / 02 / 15", // 생일
+        country: "Korea"
+        // 메소드 작성
+      };
+    </script>
+  </head>
+  <body>
+    <h3>리터럴 표기법으로 자신의 정보 출력</h3>
+    <hr />
+    <script>
+      document.write("<strong>NAME :</strong> " + student.name + "<hr>");
+      document.write("<strong>ID</strong> : " + student.id + "<hr>");
+      document.write("<strong>COUNTRY</strong> : " + student.country + "<hr>");
+      document.write("<strong>BRITH</strong> : " + student.brith + "<hr>");
+      document.write("<strong>AGE :</strong> " + student.Age + "<hr>");
+      document.write(
+        "<strong>PHONE - NUMBER</strong> : " + student.number + "<hr>"
+      );
+    </script>
+  </body>
+</html>
