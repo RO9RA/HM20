@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm20 : Javascript Event</title>
+    <style></style>
+    <script>
+      // 미리 로딩해둘 이미지 이름 배열
+      var files = [
+        "media/레온하트.jpg",
+        "media/레온하트2.jpg",
+        "media/모라이 유적.jpg",
+        "media/왕의 무덤.jpg",
+        "media/루테란 항구.jpg",
+        "media/대항해.jpg",
+        "media/토토이크.jpg",
+        "media/애니츠.jpg",
+        "media/애니츠2.jpg",
+        "media/장천.jpg",
+        "media/등나무.jpg",
+        "media/아르데타인.jpg",
+        "media/슈샤이어.jpg",
+        "media/슈샤이어2.jpg",
+        "media/베른성.jpg",
+        "media/베른대도시.jpg",
+        "media/항해섬.jpg",
+        "media/로헨델.jpg",
+      ];
+      var imgs = new Array();
+      for (var i = 0; i < files.length; i++) {
+        imgs[i] = new Image(); // 메모리에 이미지 객체 생성
+        imgs[i].src = files[i]; // 이미지 로딩
+      }
+      // 다음 이미지 출력
+      var next = 1;
+      var next2 = 0;
+      function size(img) {
+        var mySpan = document.getElementById("mySpan2");
+        mySpan.innerHTML = img.width + " x " + img.height;
+        var myspan4 = document.getElementById("k");
+        var nemespilt = files[next2].split("/");
+        myspan4.innerHTML = nemespilt[1];
+        next2++;
+        next2 %= imgs.length;
+      }
+      function change(img) {
+        img.src = imgs[next].src; // 이미지 변경
+        next++; // 다음 이미지
+        next %= imgs.length; // 개수를 넘으면 처음으로
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>이미지 프리로딩과 정보 출력</h3>
+    <hr />
+    이미지를 클릭하면 다음 이미지와 정보를 보여줍니다.
+    <p>
+      <img
+        style="border:20px ridge wheat"
+        src="media/레온하트.jpg"
+        alt="."
+        width="800"
+        height="400"
+        onclick="change(this)"
+        onload="size(this)"
+      />
+    </p>
+    <div>Size : <sapn id="mySpan2">이미지 크기2</sapn></div>
+    <div>Name : <sapn id="k">이미지 크기</sapn></div>
+
+    <audio style="width:600; height: 20;" src="vol2_06_Starlight-Island.mp3" controls autoplay loop>
+    </audio>
+  </body>
+</html>
